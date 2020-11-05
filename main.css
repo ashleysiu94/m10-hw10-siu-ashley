@@ -1,8 +1,61 @@
-
 .hide {
   opacity: 0;
 }
 .show {
   opacity: 1;
   transition: opacity 1s;
+}
+
+body {
+  background-color: #e0fbfc;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #293241;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+main section {
+  padding: 5px;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 2rem;
+  color: #ee6c4d;
+}
+
+h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #293241;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #293241;
+}
+
+footer {
+  background-color: #e0fbfc;
+}
+
+@media (max-width: 650px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 }
