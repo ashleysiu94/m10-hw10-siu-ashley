@@ -8,6 +8,8 @@
 
 body {
   background-color: #e0fbfc;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
@@ -54,8 +56,6 @@ footer {
   background-color: #293241;
   height: 450px;
   width: 100%;
-  position: fixed;
-  bottom: 0;
 }
 
 footer section p, footer section h2 {
