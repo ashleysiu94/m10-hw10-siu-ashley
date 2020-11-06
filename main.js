@@ -11,3 +11,7 @@ const freezingTemp = () => {
   document.getElementById("freezing-temp").innerHTML = 32;
 };
 freezingTemp();
+
+//Any number of your choice immediately prints inside of the span with the ID "water-temp" using an arrow function
+let waterTemp = 250
+document.getElementById("water-temp").innerHTML = waterTemp;
