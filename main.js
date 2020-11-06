@@ -13,7 +13,7 @@ const freezingTemp = () => {
 freezingTemp();
 
 //Any number of your choice immediately prints inside of the span with the ID "water-temp" using an arrow function
-let waterTemp = 310
+let waterTemp = 60
 document.getElementById("water-temp").innerHTML = waterTemp;
 
 //Use a setTimeout() method to make the following occur after 3 seconds (3000 milliseconds):
@@ -31,5 +31,13 @@ setTimeout ( function belowFreezingPoint() {
   if (waterTemp < 32) {
      document.getElementById("frozen").classList.remove("hide");
      document.getElementById("frozen").classList.add("show");
+  }
+}, 3000)
+
+//If the number stored in “water-temp” is neither above 212 nor below 32, remove the class “hide” and add the class “show” to the section with the ID “good-temp” so that the message “The water is fine. Jump on in.” appears
+setTimeout ( function waterGoodTemp() {
+  if (32 >= waterTemp <= 212) {
+     document.getElementById("good-temp").classList.remove("hide");
+     document.getElementById("good-temp").classList.add("show");
   }
 }, 3000)
