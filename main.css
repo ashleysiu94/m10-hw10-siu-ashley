@@ -50,7 +50,16 @@ p {
 }
 
 footer {
-  background-color: #e0fbfc;
+  text-align: center;
+  background-color: #293241;
+  height: 450px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer section p, footer section h2 {
+  color: #ee6c4d;
 }
 
 @media (max-width: 650px) {
