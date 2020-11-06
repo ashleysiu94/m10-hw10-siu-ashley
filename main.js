@@ -5,3 +5,9 @@ const boilingTemp = () => {
   document.getElementById("boiling-temp").innerHTML = 212;
 };
 boilingTemp();
+
+//The number “32” immediately prints inside of the span with the ID "freezing-temp" using an arrow function
+const freezingTemp = () => {
+  document.getElementById("freezing-temp").innerHTML = 32;
+};
+freezingTemp();
